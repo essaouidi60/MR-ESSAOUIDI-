@@ -5,7 +5,7 @@ let pp = './Assets/malik.jpeg'
 let more = String.fromCharCode(8206)
 let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 let readMore = more.repeat(850) 
-let lkr = `\n🚀 *_Buckle up ${name}, Welcome To Mr-Malik-MD! We're going on an adventure!_* 🚀\n\n╭───❮ *MR-Malik* ❯
+let lkr = `\n🚀 *Buckle up ${name}, Welcome To Essaouidi Yassine! We're going on an adventure* 🚀\n\n╭───❮ *Essaouidi* ❯
 \n 
 ╭─❮ *Tools List* ❯
 │ 🔹 *${usedPrefix}QURAN*
@@ -81,13 +81,13 @@ ${readMore}
 ╰─────────────⦁
 
 
-╭❮  *M-r Malik MD* ❯
+╭❮  *Essaouidi Yassine* ❯
 │        🦹‍♂️
 │ 💡 Created By 
 │ 📎 *Malik-Experts*
 ╰────────────⦁`  
 conn.sendFile(m.chat, pp, 'perfil.jpg', lkr, m, false, { mentions: [who] })
-m.react('⌨')
+m.react('⏳')
 }
 handler.help = ['allmenu']
 handler.tags = ['main']
