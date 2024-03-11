@@ -84,7 +84,7 @@ ${readMore}
 ╭❮  *Essaouidi Yassine* ❯
 │        🦹‍♂️
 │ 💡 Created By 
-│ 📎 *Malik-Experts*
+│ 📎 *السويدي ياسين*
 ╰────────────⦁`  
 conn.sendFile(m.chat, pp, 'perfil.jpg', lkr, m, false, { mentions: [who] })
 m.react('⏳')
