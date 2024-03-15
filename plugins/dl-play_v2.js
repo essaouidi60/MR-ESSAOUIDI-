@@ -6,7 +6,7 @@ let fileName;
 let apiUrl;
 let enviando = false;
 const handler = async (m, { command, usedPrefix, conn, text }) => {
-  if (!text) throw `_*Mr-Malik - play*_ \n\n 💥 *The title or link of the YouTube video is Required .*\n\n *💡 _Example: Mera dil badald_*`;    
+  if (!text) throw `_*Essaouidi - play*_ \n\n 💥 *The title or link of the YouTube video is Required .*\n\n *💡 _Example: Mera dil badald_*`;    
   
  if (enviando) return;
     enviando = true
@@ -28,7 +28,7 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
 
     if (!data.resultado || !data.resultado.url) {
       enviando = false;
-      throw `_*Mr-Malik - PLAY V2*_\n\n*[ ℹ️ ] error try again later._*`;
+      throw `_*Essaouidi - PLAY V2*_\n\n*[ ℹ️ ] error try again later._*`;
     } else {
       try {
         if (command === 'play3') {
@@ -57,12 +57,12 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
             }
           } catch {
             enviando = false;
-            throw `_*< Mr-Malik - PLAY V2 />*_\n\n*[ ℹ️ ] error try again later.*`;
+            throw `_*< Essaouidi - PLAY V2 />*_\n\n*[ ℹ️ ] error try again later.*`;
           }
        }
     }
 
-    const dataMessage = `_*Mr-Malik - PLAY V2*_\n\n▢ *Títle:* ${data.resultado.title}\n\n▢ *Publish:* ${data.resultado.publicDate}`;
+    const dataMessage = `_*Essaouidi - PLAY V2*_\n\n▢ *Títle:* ${data.resultado.title}\n\n▢ *Publish:* ${data.resultado.publicDate}`;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
 
     if (buff) {
@@ -70,7 +70,7 @@ const handler = async (m, { command, usedPrefix, conn, text }) => {
       enviando = false;
     } else {
       enviando = false;
-      throw `_*< Mr-Malik - PLAY V2 />*_\n\n*[ ℹ️ ] error. Por favor, try again later.*`;
+      throw `_*< Essaouidi - PLAY V2 />*_\n\n*[ ℹ️ ] error. Por favor, try again later.*`;
     }
   } catch (error) {
     enviando = false;
