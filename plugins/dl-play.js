@@ -8,14 +8,14 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `_*Mr-Malik Play*_\n\n*✳ The title or link of the YouTube video is required.*\n\n*[💡] Example: #play Mera dil badaldy*\n\nExample2\n #play https://www.youtube.com/watch?v=JLWRZ8eWyZo:\nNote: "#" Replace with ".":_`;    const yt_play = await search(args.join(' '));
+  if (!text) throw `_*Essaouidi Play*_\n\n*✳ The title or link of the YouTube video is required.*\n\n*[💡] Example: #play Mera dil badaldy*\n\nExample2\n #play https://www.youtube.com/watch?v=JLWRZ8eWyZo:\nNote: "#" Replace with ".":_`;    const yt_play = await search(args.join(' '));
     let additionalText = '';
     if (command === 'play') {
       additionalText = 'audio';
     } else if (command === 'play2') {
       additionalText = 'vídeo';
     }
-    const texto1 = `_*Mr-Malik Play*_\n\n▢ *Títle:* ${yt_play[0].title}\n\n▢ *Publised:* ${yt_play[0].ago}\n\n▢ *Duration:* ${secondString(yt_play[0].duration.seconds)}\n\n▢ *Views:* ${`${MilesNumber(yt_play[0].views)}`}*`.trim();
+    const texto1 = `_*Essaouidi Play*_\n\n▢ *Títle:* ${yt_play[0].title}\n\n▢ *Publised:* ${yt_play[0].ago}\n\n▢ *Duration:* ${secondString(yt_play[0].duration.seconds)}\n\n▢ *Views:* ${`${MilesNumber(yt_play[0].views)}`}*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
     try {   
@@ -37,7 +37,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     await conn.sendMessage(m.chat, {audio: buff_aud, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: m});   
     return;    
     }} catch {
-    throw '_*Mr-Malik - PLAY*_\n\n *[ ℹ️ ] error . Please try again later.*';    
+    throw '_*Essaouidi - PLAY*_\n\n *[ ℹ️ ] error . Please try again later.*';    
     }}
     if (command == 'play2') {
     try {   
@@ -49,7 +49,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     const fileSizeInMB2 = fileSizeInKB2 / 1024;
     const size2 = fileSizeInMB2.toFixed(2);       
     if (size2 >= limit2) {  
-    await conn.sendMessage(m.chat, {text: `_*Mr-Malik - PLAY*_\n\n * ✅ Video Downloaded ${video}*`}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `_*Essaouidi - PLAY*_\n\n * ✅ Video Downloaded ${video}*`}, {quoted: m});
     return;    
     }     
     if (size2 >= limit1 && size2 <= limit2) {  
@@ -59,7 +59,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     await conn.sendMessage(m.chat, {video: buff_vid, mimetype: 'video/mp4', fileName: ttl2 + `.mp4`}, {quoted: m});   
     return;    
     }} catch {
-    throw '_*Mr-Malik - PLAY*_\n\n*[ ℹ️ ] error.try again later.*';    
+    throw '_*Essaouidi - PLAY*_\n\n*[ ℹ️ ] error.try again later.*';    
     }
   }
 };
