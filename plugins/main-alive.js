@@ -5,32 +5,26 @@ let user = global.db.data.users[who]
 let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 
 let caption = `
-╭───[_Mr-Malik_]───╮
+╭───[_Essaouidi_]───╮
 │╭────────────────────
 ┴│👋 Hey there, ${name}!
-⬡│⚛ I'm _Mr-Malik_ \n⬡│ I'm up and running! 🚀
+⬡│⚛ I'm _Essaouidi_ \n⬡│ I'm up and running! 🚀
 │╰────────────────────
 ┠───[ BOT INFO ]────╮
 │╭────────────────────
-┴│       _Mr-Malik_
+┴│       _Essaouidi_
 ⬡│💻 A WhatsApp bot created by:
-⬡│👨‍💻 Nasrullah
+⬡│👨‍💻 Essaouidi Yassine 
 ⬡│📞 For any inquiries, contact:
-⬡│📱 wa.me/923494757886
+⬡│📱 wa.me/212648753294
 ⬡│
-⬡│🔗 *Contributors*
+⬡│🔗 *développeur*
 ⬡│
-⬡│👨‍ 1- Boss Awais Malik 💜
-⬡│📱 wa.me/923478477910
+⬡│👨‍ 1- ➚ ிEssaouidi ⎙ ✓
+⬡│📱 wa.me/212618578927
 ⬡│
-⬡│👨‍ 2- Boss Usman 💜
-⬡│📱 wa.me/923404699880
-⬡│
-⬡│👨‍ 3- Muhammad Ameen
-⬡│📱 wa.me/923361738889
-⬡│
-⬡│👨‍ 4- Muhammad Yousif 
-⬡│📱 wa.me/923167458766
+⬡│👨‍ 2- ➚ ிEssaouidi ⎙ ✓
+⬡│📎 instagram.com/essaouidi_yassine
 ⬡│
 ⬡│Special Thanks To All
 ⬡│ Contributors❤
@@ -43,7 +37,7 @@ let caption = `
 ┬│🔸 .translate \n⬡│- Translates text \n⬡│to other lang
 │╰──────────────
 ╰────────═┅═───────
-*Thank you for choosing Mr-Malik! 🌟✨*
+*Thank you for choosing Essaouidi Yassine 🌟✨*
 `.trim()
   m.reply(caption)
 }
