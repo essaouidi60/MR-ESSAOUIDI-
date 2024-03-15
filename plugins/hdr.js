@@ -9,7 +9,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let q = m.quoted ? m.quoted : m;
 				let mime = (q.msg || q).mimetype || q.mediaType || "";
 				if (!mime)
-					throw `photo?`;
+					throw `اين صورة الدي تريد زيادة جودتها 👑`;
 				if (!/image\/(jpe?g|png)/.test(mime))
 					throw `Mime ${mime} tidak support`;
 				else conn.enhancer[m.sender] = true;
@@ -18,7 +18,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let error;
 				try {
 					const This = await processing(img, "dehaze");
-					conn.sendFile(m.chat, This, "", "Nih...", m);
+					conn.sendFile(m.chat, This, "", "instagram.com/essaouidi_yassine...", m);
 				} catch (er) {
 					error = true;
 				} finally {
@@ -35,7 +35,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let q = m.quoted ? m.quoted : m;
 				let mime = (q.msg || q).mimetype || q.mediaType || "";
 				if (!mime)
-					throw `photo?`;
+					throw `اين صورة الدي تريد زيادة جودتها 👑`;
 				if (!/image\/(jpe?g|png)/.test(mime))
 					throw `Mime ${mime} tidak support`;
 				else conn.recolor[m.sender] = true;
@@ -44,7 +44,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let error;
 				try {
 					const This = await processing(img, "recolor");
-					conn.sendFile(m.chat, This, "", "Nih...", m);
+					conn.sendFile(m.chat, This, "", "instagram.com/essaouidi_yassine...", m);
 				} catch (er) {
 					error = true;
 				} finally {
@@ -61,7 +61,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let q = m.quoted ? m.quoted : m;
 				let mime = (q.msg || q).mimetype || q.mediaType || "";
 				if (!mime)
-					throw `photo?`;
+					throw `اين صورة الدي تريد زيادة جودتها 👑`;
 				if (!/image\/(jpe?g|png)/.test(mime))
 					throw `Mime ${mime} tidak support`;
 				else conn.hdr[m.sender] = true;
@@ -70,7 +70,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let error;
 				try {
 					const This = await processing(img, "enhance");
-					conn.sendFile(m.chat, This, "", "Nih...", m);
+					conn.sendFile(m.chat, This, "", "instagram.com/essaouidi_yassine...", m);
 				} catch (er) {
 					error = true;
 				} finally {
