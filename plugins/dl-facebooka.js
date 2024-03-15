@@ -7,7 +7,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 
   const urlRegex = /^(?:https?:\/\/)?(?:www\.)?(?:facebook\.com|fb\.watch)\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/i;
   if (!urlRegex.test(args[0])) {
-    throw '⚠️ PLEASE GIVE A VALID URL.';
+    throw '🤌🏻ارسل رابط تاع فيديو';
   }
 
   m.react(rwait);
@@ -15,9 +15,9 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   try {
     const result = await fg.fbdl(args[0]);
     const tex = `
-⊱ ─── { *Malik FBDL* } ─── ⊰
-↳ *Hello! 🌟*\n ↳ *📽️ Here is your Facebook video.*\n\n ↳ *Remember that if you want to convert the video into audio, you can do it easily by responding to the video with the command #tomp3 🎧*
-⊱ ────── {⋆♬⋆} ────── ⊰`;
+⊱ ─── { *Essaouidi FBDL* } ─── ⊰
+↳ *مـࢪحبا 🌟*\n ↳ *📽️ .هنا هو الفيديو الفيسبوك الخاص بك*\n\n ↳ *لا تنسى متابعتي على انستغرام لتتعرف على ما هو جديد \ninstagram.com/essaouidi_yassine*
+⊱ ────── {⋆🇲🇦⋆} ────── ⊰`;
 
     const response = await fetch(result.videoUrl);
     const arrayBuffer = await response.arrayBuffer();
