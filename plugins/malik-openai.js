@@ -23,7 +23,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   try {
         conn.sendPresenceUpdate('composing', m.chat);
         //let sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
-        let sistema1 = `Mr-Malik AI tools created by Nasrullah.`;
+        let sistema1 = `Yassine AI tools created by Essaouidi.`;
         async function getOpenAIChatCompletion(texto) {
         const openaiAPIKey = global.openai_key;
         let chgptdb = global.chatgpt.data.users[m.sender];
@@ -38,7 +38,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
         };
         let respuesta = await getOpenAIChatCompletion(text);
         if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
-        m.reply(`${respuesta}\n\n🛆 *Created by Nasrullah*`.trim());
+        m.reply(`${respuesta}\n\n🛆 *Created by Essaouidi*`.trim());
     } catch {
       try {
         conn.sendPresenceUpdate('composing', m.chat);
@@ -48,32 +48,32 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     } catch {
       try {
         conn.sendPresenceUpdate('composing', m.chat);
-        const syms1 = `Mr-Malik.`;
+        const syms1 = `Essaouidi.`;
         const fgapi1 = await fetch(`https://api-fgmods.ddns.net/api/info/openai?text=${text}&symsg=${syms1}&apikey=XlwAnX8d`);
         const fgjson1 = await fgapi1.json();
         if (fgjson1.result == 'error' || fgjson1.result == '' || !fgjson1.result) return XD; // causar error undefined para lanzar msg de error
-        m.reply(`${fgjson1.result}\n\n🛆 *Created by Nasrullah*`.trim());
+        m.reply(`${fgjson1.result}\n\n🛆 *Created by Essaouidi*`.trim());
     } catch {
       try {
         conn.sendPresenceUpdate('composing', m.chat);
         const vihangayt1 = await fetch(`https://vihangayt.me/tools/chatgpt?q=${text}`);
         const vihangaytjson1 = await vihangayt1.json();
         if (vihangaytjson1.data == 'error' || vihangaytjson1.data == '' || !vihangaytjson1.data) return XD; // causar error undefined para usar otra api
-        m.reply(`${vihangaytjson1.data}\n\n🛆 *Created by Nasrullah*`.trim());
+        m.reply(`${vihangaytjson1.data}\n\n🛆 *Created by Essaouidi*`.trim());
     } catch {
       try {
         conn.sendPresenceUpdate('composing', m.chat);
         const vihangayt2 = await fetch(`https://vihangayt.me/tools/chatgpt2?q=${text}`);
         const vihangaytjson2 = await vihangayt2.json();
         if (vihangaytjson2.data == 'error' || vihangaytjson2.data == '' || !vihangaytjson2.data) return XD; // causar error undefined para usar otra api
-        m.reply(`${vihangaytjson2.data}\n\n🛆 *Created by Nasrullah*`.trim());
+        m.reply(`${vihangaytjson2.data}\n\n🛆 *Created by Essaouidi*`.trim());
     } catch {
       try {
         conn.sendPresenceUpdate('composing', m.chat);
         const vihangayt3 = await fetch(`https://vihangayt.me/tools/chatgpt3?q=${text}`);
         const vihangaytjson3 = await vihangayt3.json();
         if (vihangaytjson3.data == 'error' || vihangaytjson3.data == '' || !vihangaytjson3.data) return XD; // causar error undefined para usar otra api
-        m.reply(`${vihangaytjson3.data}\n\n🛆 *Created by Nasrullah*`.trim());        
+        m.reply(`${vihangaytjson3.data}\n\n🛆 *Created by Essaouidi*`.trim());        
     } catch {
       try {
         conn.sendPresenceUpdate('composing', m.chat);
@@ -81,7 +81,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
         const hasill22 = await tioress22.json();
         if (hasill22.result == 'error' || hasill22.result == '' || !hasill22.result) return XD; // causar error undefined para usar otra api
         const hasill22_result = await translate(`${hasill22.result}`, {to: 'en', autoCorrect: false});
-        m.reply(`${hasill22_result.text}\n\n🛆 *Created by Nasrullah*`.trim());
+        m.reply(`${hasill22_result.text}\n\n🛆 *Created by Essaouidi*`.trim());
     } catch {
       try {
         conn.sendPresenceUpdate('composing', m.chat);
@@ -99,7 +99,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
         const akuariapi2 = await fetch(`https://api.akuari.my.id/ai/gpt?chat=${text}`);
         const akuariapijson2 = await akuariapi2.json();
         if (akuariapijson2.respon == 'error' || akuariapijson2.respon == '' || !akuariapijson2.respon) return XD; // causar error undefined para lanzar msg de error
-        const akuariapiresult2 = await translate(`${akuariapijson2.respon}\n\n🛆 *Created by Nasrullah*`, {to: 'en', autoCorrect: false});
+        const akuariapiresult2 = await translate(`${akuariapijson2.respon}\n\n🛆 *Created by Essaouidi*`, {to: 'en', autoCorrect: false});
         m.reply(akuariapiresult2.text.trim());
     } catch {
       try {
@@ -108,7 +108,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
         const akuariapijson1 = await akuariapi1.json();
         if (akuariapijson1.respon == 'error' || akuariapijson1.respon == '' || !akuariapijson1.respon) return XD; // causar error undefined para usar otra api
         const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'en', autoCorrect: false});
-        m.reply(`${akuariapiresult1.text}\n\n🛆 *Created by Nasrullah*`.trim());
+        m.reply(`${akuariapiresult1.text}\n\n🛆 *Created by Essaouidi*`.trim());
     } catch {
         throw `*[❗] 𝙴𝚁𝚁𝙾𝚁, 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*`;
      }}
