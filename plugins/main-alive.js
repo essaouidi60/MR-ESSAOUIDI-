@@ -20,10 +20,10 @@ let caption = `
 ⬡│
 ⬡│🔗 *développeur*
 ⬡│
-⬡│👨‍ 1- ➚ ிEssaouidi ⎙ ✓
-⬡│📱 wa.me/212618578927
+⬡│👨‍ 1- ➚ ிEssaouidi bot ⎙ ✓
+⬡│📱 wa.me/212719596553
 ⬡│
-⬡│👨‍ 2- ➚ ிEssaouidi ⎙ ✓
+⬡│👨‍ 2- Instagram 
 ⬡│📎 instagram.com/essaouidi_yassine
 ⬡│
 ⬡│Special Thanks To All
